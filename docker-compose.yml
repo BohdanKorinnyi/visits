@@ -3,6 +3,7 @@ services:
   redis-server:
     image: 'redis'
   node-app:
+    restart: always
     build: . #will use Dockerfile in current directory
     ports:
       - "8081:8081"
